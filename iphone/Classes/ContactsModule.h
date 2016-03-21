@@ -18,7 +18,7 @@
 #import "TiContactsPerson.h"
 
 #if IS_XCODE_7
-@interface ContactsModule : TiModule<ABPeoplePickerNavigationControllerDelegate, CNContactPickerDelegate,CNContactViewControllerDelegate> {
+@interface ContactsModule : TiModule<ABPeoplePickerNavigationControllerDelegate, CNContactPickerDelegate,CNContactViewControllerDelegate, TiContactsPersonUpdateObserver> {
 #else
 @interface ContactsModule : TiModule<ABPeoplePickerNavigationControllerDelegate> {
 #endif
